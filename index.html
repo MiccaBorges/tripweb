@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trip✈</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-color: #e4d8dc;
+      }
+      h1 {
+        width: 90%;
+        font-size: 100px;
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+      button {
+        display: block;
+        margin: 0 auto;
+        background: #ffe3e3;
+        color: black;
+        border: 1px solid #fff;
+        padding: 20px 30px;
+        border-radius: 30px;
+        font-size: 20px;
+        border-color: white;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        background: #fff;
+        color: black;
+        cursor: pointer;
+      }
+      footer {
+        display: block;
+        margin: 0 auto;
+        text-align: center;
+        padding: 5%;
+      }
+      .front {
+        min-height: 55vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/018/947/original/paris-2017-home.jpg?1634319279");
+        background-position: center;
+        background-size: cover;
+        position: relative;
+      }
+      .europe {
+        display: block;
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+      .destination {
+        display: block;
+        border-radius: 10px;
+        margin: 0px;
+        flex-basis: 48%;
+        padding-top: 45px;
+        padding-bottom: 45px;
+        border: 0;
+      }
+      .destination img {
+        height: 280px;
+        width: 400px;
+        border-radius: 10px 0px 0px 10px;
+      }
+
+      .destination p {
+        margin: -284px 50px 80px 400px;
+        padding: 48px;
+        font-size: 25px;
+        background-color: #ffe3e3;
+        border-radius: 0px 10px 10px 0px;
+        display: flex;
+        text-align: left;
+        line-height: 1.5;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="front">
+      <h1>
+        <em>Explore Europe</em>
+      </h1>
+    </div>
+
+    <div class="europe">
+      <div class="destination">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/018/730/original/venice.jpg?1633980434"
+          alt="Venice city"
+        />
+
+        <p>
+          Venice, the capital of northern Italy’s Veneto region, is built on
+          more than 100 small islands in a lagoon in the Adriatic Sea. It has no
+          roads, just canals – including the Grand Canal thoroughfare – lined
+          with Renaissance and Gothic palaces. The central square, Piazza San
+          Marco, contains St. Mark’s Basilica, which is tiled with Byzantine
+          mosaics, and the Campanile bell tower offering views of the city’s red
+          roofs.
+        </p>
+      </div>
+      <div class="destination">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/018/727/original/paris.jpg?1633978620"
+          alt="Paris city"
+          ;
+        />
+
+        <p>
+          Paris, France's capital, is a major European city and a global center
+          for art, fashion, gastronomy and culture. Its 19th-century cityscape
+          is crisscrossed by wide boulevards and the River Seine. Beyond such
+          landmarks as the Eiffel Tower and the 12th-century, Gothic Notre-Dame
+          cathedral, the city is known for its cafe culture and designer
+          boutiques along the Rue du Faubourg Saint-Honoré.
+        </p>
+      </div>
+      <div class="destination">
+        <img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/018/731/original/london..jpeg?1633980524"
+          alt="London city"
+        />
+
+        <p>
+          London, the capital of England and the United Kingdom, is a
+          21st-century city with history stretching back to Roman times. At its
+          centre stand the imposing Houses of Parliament, the iconic ‘Big Ben’
+          clock tower and Westminster Abbey, site of British monarch
+          coronations. Across the Thames River, the London Eye observation wheel
+          provides panoramic views of the South Bank cultural complex, and the
+          entire city.
+        </p>
+      </div>
+    </div>
+    <button class="choose-country">Choose Destination</button>
+
+    <footer>Created by Camila Borges</footer>
+
+    <script>
+      function choose() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+
+        alert("Thank you, " + name + "! We'll be in touch by email! ?");
+      }
+
+      let chooseButton = document.querySelector(".choose-country");
+      chooseButton.addEventListener("click", choose);
+    </script>
+  </body>
+</html>
